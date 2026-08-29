@@ -3,13 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="机器人学习与运动控制研究作品集，涵盖强化学习、足式机器人、全身移动操作与机器人视觉。">
+  <meta name="description" content="机器人控制与具身智能作品集，涵盖强化学习、足式机器人、全身移动操作与机器人视觉。">
   <meta name="theme-color" content="#071a20">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="朱昱臻｜机器人学习作品集">
+  <meta property="og:title" content="机器人控制与具身智能作品集">
   <meta property="og:description" content="强化学习、足式机器人、运动控制与真实机器人系统。">
   <meta property="og:image" content="assets/posters/da-moe.webp">
-  <title>朱昱臻｜机器人学习作品集</title>
+  <title>机器人控制与具身智能作品集</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
@@ -20,7 +20,7 @@
     <div class="nav-shell">
       <a class="brand" href="#top" aria-label="返回首页">
         <span class="brand-mark">ZYZ</span>
-        <span class="brand-text">Robot Learning</span>
+        <span class="brand-text">Robotics Portfolio</span>
       </a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
         <span class="sr-only">打开导航</span>
@@ -64,7 +64,7 @@
         </div>
       </article>
 
-      <article class="project project-featured project-reverse reveal">
+      <article class="project project-featured project-secondary project-reverse reveal">
         <div class="video-frame">
           <video controls playsinline preload="none" poster="assets/posters/holistic-vla.webp">
             <source src="HolisticVLA_Supplementary_Video.mp4" type="video/mp4">
@@ -85,23 +85,25 @@
         </div>
       </article>
 
-      <div class="project-grid">
-        <article class="project-card reveal">
-          <div class="video-frame video-frame-small">
+      <article class="project project-featured project-secondary reveal">
+        <div class="video-frame">
             <video controls playsinline preload="none" poster="assets/posters/graspnet.webp">
               <source src="graspnet.mp4" type="video/mp4">
               你的浏览器不支持 HTML5 视频。
             </video>
             <span class="video-duration">01:47</span>
-          </div>
-          <div class="project-card-body">
-            <p class="project-number">03 · ROBOT VISION</p>
-            <h3>医疗试管避碰抓取</h3>
-            <p>端到端 RGB 像素级抓取网络，在 XArm6 平台完成真实试管分拣验证，系统整体成功率约 95%。</p>
-            <div class="tag-row"><span>DeepLabV3+</span><span>Grasping</span><span>20 ms</span></div>
-          </div>
-        </article>
+        </div>
+        <div class="project-copy">
+          <p class="project-number">FEATURED · 03</p>
+          <h3>医疗试管避碰抓取</h3>
+          <p class="project-en">Pixel-Level Collision-Free Grasp Prediction Network for Medical Test Tube Sorting on Cluttered Trays</p>
+          <p>设计端到端 RGB 像素级无碰撞抓取网络，并在 XArm6 平台完成真实试管分拣验证，系统整体成功率约 95%。</p>
+          <div class="tag-row"><span>DeepLabV3+</span><span>Grasping</span><span>20 ms</span></div>
+          <div class="project-meta"><span>IEEE RA-L · 已发表</span><span>2023</span></div>
+        </div>
+      </article>
 
+      <div class="project-grid">
         <article class="project-card reveal">
           <div class="video-frame video-frame-small">
             <video controls playsinline preload="none" poster="assets/posters/dayou.webp">
@@ -112,13 +114,13 @@
           </div>
           <div class="project-card-body">
             <p class="project-number">04 · FIELD ROBOTICS</p>
-            <h3>大有科技车狗协同作业</h3>
-            <p>面向电力作业场景，参与车辆与四足机器人任务编排、通信交互、系统联调和现场功能验证。</p>
+            <h3>电网车狗协同巡检</h3>
+            <p>面向电网巡检场景，参与车辆与四足机器人任务编排、通信交互、系统联调和现场功能验证。</p>
             <div class="tag-row"><span>Unitree Go2</span><span>Task Planning</span><span>Deployment</span></div>
           </div>
         </article>
 
-        <article class="project-card project-card-wide reveal">
+        <article class="project-card reveal">
           <div class="video-frame video-frame-small">
             <video controls playsinline preload="none" poster="assets/posters/doggybot.webp">
               <source src="helpful_doggybot.mp4" type="video/mp4">
@@ -128,8 +130,8 @@
           </div>
           <div class="project-card-body">
             <p class="project-number">05 · EMBODIED AI</p>
-            <h3>Helpful DoggyBot 四足机器人自主交互</h3>
-            <p>面向真实实验环境中的物体交互任务，展示四足机器人从任务理解到运动执行的闭环运行与实机效果。</p>
+            <h3>四足机器人自主交互</h3>
+            <p>在 Helpful DoggyBot 基础上，完成任务理解、环境感知与运动执行模块的集成与实机验证，展示面向真实场景的自主交互流程。</p>
             <div class="tag-row"><span>Quadruped</span><span>Interaction</span><span>Real Robot</span></div>
           </div>
         </article>
@@ -140,7 +142,7 @@
       <div class="section-shell">
         <header class="section-heading section-heading-light reveal">
           <p class="section-index">02 / RESEARCH</p>
-          <div><h2>科研成果</h2><p>围绕机器人学习、运动控制与视觉感知，持续完成从方法设计到真实系统验证的研究闭环。</p></div>
+          <div><h2>科研成果</h2><p>围绕机器人控制、强化学习与视觉感知，持续完成从方法设计到真实系统验证的研究闭环。</p></div>
         </header>
 
         <div class="research-list">
@@ -166,7 +168,7 @@
   </main>
 
   <footer class="site-footer">
-    <div class="section-shell"><p>© <span id="year">2026</span> Zhu Yuzhen · Research Portfolio</p><p>Robot Learning · Locomotion · Embodied AI</p><a href="#top">返回顶部 ↑</a></div>
+    <div class="section-shell"><p>© <span id="year">2026</span> Zhu Yuzhen · Research Portfolio</p><p>Robot Control · Locomotion · Embodied AI</p><a href="#top">返回顶部 ↑</a></div>
   </footer>
 
   <script src="assets/js/main.js" defer></script>

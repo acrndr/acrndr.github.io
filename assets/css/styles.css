@@ -53,6 +53,8 @@ button { color: inherit; font: inherit; }
 
 .project { margin-bottom: 76px; }
 .project-featured { display: grid; grid-template-columns: minmax(0, 1.22fr) minmax(330px, .78fr); gap: 52px; align-items: center; }
+.project-secondary { width: min(1120px, 100%); grid-template-columns: minmax(0, 1fr) minmax(330px, .75fr); margin-inline: auto; }
+.project-secondary .project-copy h3 { font-size: clamp(25px, 2.5vw, 36px); }
 .project-reverse .video-frame { order: 2; }
 .video-frame { position: relative; overflow: hidden; aspect-ratio: 16/9; border-radius: var(--radius); background: #06171d; box-shadow: var(--shadow); }
 .video-frame video { width: 100%; height: 100%; object-fit: cover; background: #06171d; }
@@ -66,6 +68,7 @@ button { color: inherit; font: inherit; }
 .metric-list strong { display: block; font-size: 19px; letter-spacing: -.03em; }
 .metric-list span { display: block; color: var(--ink-2); font-size: 10px; line-height: 1.35; }
 .project-meta { display: flex; justify-content: space-between; gap: 20px; padding-top: 15px; border-top: 1px solid var(--line); color: var(--ink-2); font-size: 12px; font-weight: 650; }
+.project-copy > .tag-row + .project-meta { margin-top: 26px; }
 .project-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 26px; }
 .project-card { overflow: hidden; border: 1px solid var(--line); border-radius: var(--radius); background: rgba(255,255,255,.45); transition: transform .25s, box-shadow .25s; }
 .project-card:hover { transform: translateY(-5px); box-shadow: var(--shadow); }
