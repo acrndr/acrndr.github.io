@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="机器人学习与运动控制研究作品集，涵盖强化学习、足式机器人、全身移动操作与机器人视觉。">
+  <meta name="theme-color" content="#071a20">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="朱昱臻｜机器人学习作品集">
+  <meta property="og:description" content="强化学习、足式机器人、运动控制与真实机器人系统。">
+  <meta property="og:image" content="assets/posters/da-moe.webp">
+  <title>朱昱臻｜机器人学习作品集</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要内容</a>
+
+  <header class="site-header" id="top">
+    <div class="nav-shell">
+      <a class="brand" href="#top" aria-label="返回首页">
+        <span class="brand-mark">ZYZ</span>
+        <span class="brand-text">Robot Learning</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">打开导航</span>
+        <span></span><span></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="主导航">
+        <a href="#work">项目与视频</a>
+        <a href="#research">论文成果</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero section-shell">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span></span> ZHU YUZHEN · RESEARCH PORTFOLIO</p>
+        <h1>机器人学习，<em>从仿真走向实机。</em></h1>
+        <p class="hero-lead">
+          聚焦强化学习、足式机器人与运动控制，覆盖策略设计、仿真训练、性能评估与真实机器人部署，
+          探索复杂机器人行为的统一建模与可靠执行。
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#work">观看项目视频 <span aria-hidden="true">↓</span></a>
+          <a class="button button-ghost" href="#research">浏览论文成果</a>
+        </div>
+        <dl class="hero-stats" aria-label="成果概览">
+          <div><dt>3</dt><dd>项 IEEE RA-L 工作</dd></div>
+          <div><dt>5</dt><dd>段机器人实机演示</dd></div>
+          <div><dt>92.3%</dt><dd>四足实机多地形成功率</dd></div>
+        </dl>
+      </div>
+
+      <figure class="hero-showcase reveal">
+        <img src="assets/posters/da-moe.webp" width="1280" height="720" alt="四足机器人统一控制实机演示画面">
+        <figcaption>
+          <p class="project-number">FEATURED RESEARCH · 2026</p>
+          <h2>Unified Heterogeneous<br>Quadrupedal Locomotion</h2>
+          <div class="tag-row"><span>DA-MoE</span><span>Unitree Go2</span><span>Real-World</span></div>
+        </figcaption>
+      </figure>
+    </section>
+
+    <section class="marquee" aria-label="技术方向">
+      <div>
+        <span>REINFORCEMENT LEARNING</span><i></i>
+        <span>QUADRUPEDAL LOCOMOTION</span><i></i>
+        <span>HUMANOID MANIPULATION</span><i></i>
+        <span>ROBOT VISION</span><i></i>
+      </div>
+    </section>
+
+    <section class="section section-shell" id="work">
+      <header class="section-heading reveal">
+        <p class="section-index">01 / SELECTED WORK</p>
+        <div>
+          <h2>项目与实机演示</h2>
+          <p>所有视频均为原生 MP4。点击播放时才加载视频数据，首页打开不会同时下载全部文件。</p>
+        </div>
+      </header>
+
+      <article class="project project-featured reveal">
+        <div class="video-frame">
+          <video controls playsinline preload="none" poster="assets/posters/da-moe.webp">
+            <source src="DA_MoE_Supplementary_Video.mp4" type="video/mp4">
+            你的浏览器不支持 HTML5 视频。
+          </video>
+          <span class="video-duration">02:10</span>
+        </div>
+        <div class="project-copy">
+          <p class="project-number">FEATURED · 01</p>
+          <h3>异构四足机器人统一运动控制</h3>
+          <p class="project-en">Unified Heterogeneous Quadrupedal Locomotion via a Domain-Auxiliary Mixture of Experts Policy</p>
+          <p>主导提出 DA-MoE 统一控制策略，在单一策略中实现四足、直立、倒立及模式在线切换，并完成 Unitree Go2 多地形实机验证。</p>
+          <ul class="metric-list">
+            <li><strong>84.3%</strong><span>仿真三模式平均成功率</span></li>
+            <li><strong>86.4%</strong><span>在线切换成功率</span></li>
+            <li><strong>92.3%</strong><span>实机多地形成功率</span></li>
+          </ul>
+          <div class="project-meta"><span>IEEE RA-L · 第一作者 · 在投</span><span>2026</span></div>
+        </div>
+      </article>
+
+      <article class="project project-featured project-reverse reveal">
+        <div class="video-frame">
+          <video controls playsinline preload="none" poster="assets/posters/holistic-vla.webp">
+            <source src="HolisticVLA_Supplementary_Video.mp4" type="video/mp4">
+            你的浏览器不支持 HTML5 视频。
+          </video>
+          <span class="video-duration">03:06</span>
+        </div>
+        <div class="project-copy">
+          <p class="project-number">FEATURED · 02</p>
+          <h3>HolisticVLA 人形机器人全身移动操作</h3>
+          <p class="project-en">Humanoid Loco-Manipulation with Force Awareness and Task Stage Guidance</p>
+          <p>参与设计力自适应全身控制器低层策略，采用双阶段 PPO 训练，协调上身目标跟踪与下身平衡，支撑接触丰富的长程操作任务。</p>
+          <ul class="metric-list">
+            <li><strong>0.21</strong><span>大扰动下上身跟踪误差</span></li>
+            <li><strong>78.0%</strong><span>四类全身操作平均成功率</span></li>
+          </ul>
+          <div class="project-meta"><span>IEEE RA-L · 低层策略设计 · 在投</span><span>2026</span></div>
+        </div>
+      </article>
+
+      <div class="project-grid">
+        <article class="project-card reveal">
+          <div class="video-frame video-frame-small">
+            <video controls playsinline preload="none" poster="assets/posters/graspnet.webp">
+              <source src="graspnet.mp4" type="video/mp4">
+              你的浏览器不支持 HTML5 视频。
+            </video>
+            <span class="video-duration">01:47</span>
+          </div>
+          <div class="project-card-body">
+            <p class="project-number">03 · ROBOT VISION</p>
+            <h3>医疗试管避碰抓取</h3>
+            <p>端到端 RGB 像素级抓取网络，在 XArm6 平台完成真实试管分拣验证，系统整体成功率约 95%。</p>
+            <div class="tag-row"><span>DeepLabV3+</span><span>Grasping</span><span>20 ms</span></div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="video-frame video-frame-small">
+            <video controls playsinline preload="none" poster="assets/posters/dayou.webp">
+              <source src="dayou.mp4" type="video/mp4">
+              你的浏览器不支持 HTML5 视频。
+            </video>
+            <span class="video-duration">03:14</span>
+          </div>
+          <div class="project-card-body">
+            <p class="project-number">04 · FIELD ROBOTICS</p>
+            <h3>大有科技车狗协同作业</h3>
+            <p>面向电力作业场景，参与车辆与四足机器人任务编排、通信交互、系统联调和现场功能验证。</p>
+            <div class="tag-row"><span>Unitree Go2</span><span>Task Planning</span><span>Deployment</span></div>
+          </div>
+        </article>
+
+        <article class="project-card project-card-wide reveal">
+          <div class="video-frame video-frame-small">
+            <video controls playsinline preload="none" poster="assets/posters/doggybot.webp">
+              <source src="helpful_doggybot.mp4" type="video/mp4">
+              你的浏览器不支持 HTML5 视频。
+            </video>
+            <span class="video-duration">01:08</span>
+          </div>
+          <div class="project-card-body">
+            <p class="project-number">05 · EMBODIED AI</p>
+            <h3>Helpful DoggyBot 四足机器人自主交互</h3>
+            <p>面向真实实验环境中的物体交互任务，展示四足机器人从任务理解到运动执行的闭环运行与实机效果。</p>
+            <div class="tag-row"><span>Quadruped</span><span>Interaction</span><span>Real Robot</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="research">
+      <div class="section-shell">
+        <header class="section-heading section-heading-light reveal">
+          <p class="section-index">02 / RESEARCH</p>
+          <div><h2>科研成果</h2><p>围绕机器人学习、运动控制与视觉感知，持续完成从方法设计到真实系统验证的研究闭环。</p></div>
+        </header>
+
+        <div class="research-list">
+          <article class="research-item reveal">
+            <span class="research-year">2026</span>
+            <div><p class="research-status">IEEE RA-L · 第一作者 · 在投</p><h3>Unified Heterogeneous Quadrupedal Locomotion via a Domain-Auxiliary Mixture of Experts Policy</h3><p>DA-MoE · RC-FiLM · Mode-wise Advantage Normalization</p></div>
+            <span class="research-arrow" aria-hidden="true">↗</span>
+          </article>
+          <article class="research-item reveal">
+            <span class="research-year">2026</span>
+            <div><p class="research-status">IEEE RA-L · 低层策略设计 · 在投</p><h3>Humanoid Loco-Manipulation with Force Awareness and Task Stage Guidance for Contact-Rich Dexterous Interaction</h3><p>Force-Aware WBC · Two-Stage PPO · Humanoid Manipulation</p></div>
+            <span class="research-arrow" aria-hidden="true">↗</span>
+          </article>
+          <article class="research-item reveal">
+            <span class="research-year">2023</span>
+            <div><p class="research-status">IEEE RA-L · 已发表</p><h3>Pixel-Level Collision-Free Grasp Prediction Network for Medical Test Tube Sorting on Cluttered Trays</h3><p>Pixel-Level Grasping · REASP · Real-World Sorting</p></div>
+            <span class="research-arrow" aria-hidden="true">↗</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="section-shell"><p>© <span id="year">2026</span> Zhu Yuzhen · Research Portfolio</p><p>Robot Learning · Locomotion · Embodied AI</p><a href="#top">返回顶部 ↑</a></div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
